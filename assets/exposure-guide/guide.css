@@ -1,0 +1,27 @@
+.exposure-head { max-width: 55rem; margin: 0 0 clamp(2rem,5vw,4.5rem); }
+.exposure-guide a { text-underline-offset: .18em; }
+.exposure-head h1 { max-width: 22ch; font-size: clamp(2.15rem,5vw,4.25rem); line-height: 1.05; margin: 1rem 0; }
+.exposure-head .lede { max-width: 54ch; }
+.exposure-layout { display: grid; grid-template-columns: minmax(12rem,1fr) minmax(0,3fr); gap: clamp(1.5rem,5vw,5rem); align-items: start; }
+.exposure-toc { border-top: 1px solid var(--line); padding-block: 1rem; }
+.exposure-toc h2 { font-size: 1.15rem; }
+.exposure-toc ul, .source-list { padding-left: 1.2rem; }
+.exposure-toc li { margin: .5rem 0; }
+.exposure-toc a { display: inline-block; padding-block: .25rem; }
+.exposure-body { min-width: 0; max-width: 68ch; }
+.exposure-body h2 { padding-top: 1.5rem; border-top: 1px solid var(--line); margin-top: 2rem; }
+.exposure-body > section:first-child h2 { margin-top: 0; }
+.exposure-body p { line-height: 1.65; margin: .7rem 0 1.15rem; }
+.exposure-body figure { background: #f2f7f6; padding: clamp(.8rem,2.5vw,1.5rem); margin: 1.5rem 0; border-radius: 5px; }
+.exposure-body figure img { display: block; max-width: 100%; max-height: 23rem; width: auto; height: auto; margin: auto; }
+.exposure-body figure p { margin: .45rem 0; }
+.exposure-body details summary { cursor: pointer; padding: .6rem 0; }
+.exposure-body .gear-referral { padding: 1.3rem; margin: 1.5rem 0; background: #eff4f3; border-left: 3px solid #3b7471; }
+.gear-referral h3, .gear-referral p { margin: 0 0 .7rem; }
+.gear-referral a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
+.exposure-body .source-list { overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .exposure-layout { display: block; }
+  .exposure-toc { margin-bottom: 1.25rem; }
+  .exposure-toc ul { margin-bottom: 0; }
+}

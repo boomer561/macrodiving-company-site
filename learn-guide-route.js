@@ -1,6 +1,9 @@
 (function () {
   'use strict';
   function openGuide() {
+    if (location.hash === '#/learn/compare-exposure-wear-by-fit') {
+      location.replace('learn-exposure-wear-by-fit.html');
+    }
     if (location.hash === '#/learn/compare-mask-snorkel-fin-fit') {
       location.replace('learn-mask-snorkel-fin-fit.html');
     }
